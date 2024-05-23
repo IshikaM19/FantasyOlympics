@@ -1,0 +1,29 @@
+import streamlit as st
+def main():
+    """Main function to create the Home page for the dashboard."""
+
+    st.write("# ✨ Fantasy Olympics ✨")
+    st.sidebar.success("Sidebar")
+
+    with st.container(border=True):
+
+        st.markdown("""
+            Welcome to Fantasy Olympics!
+            
+            Step into a world where your favorite sports heroes and legendary fantasy champions come together in the ultimate competition with our Fantasy Olympics app! 
+            
+            Immerse yourself in the excitement of drafting your dream team from a diverse roster of real-world athletes, competing across various Olympic events. Experience the thrill of strategizing and managing your team, making pivotal decisions that could lead to victory. 
+            
+            Join a community of sports enthusiasts, track live updates, earn points, and climb the leaderboards to claim your glory. 
+            
+            Whether you're a seasoned sports fan or new to the fantasy scene, our app offers an engaging and exhilarating adventure that lets you be a part of the Olympic magic like never before. 
+            
+            Don’t just watch the Olympics—be a part of it!""")
+
+
+if __name__ == "__main__":
+    st.set_page_config(
+        page_title="Fantasy Olympics",
+        page_icon="✨",)
+
+    main()
